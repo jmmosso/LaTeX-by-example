@@ -1,0 +1,39 @@
+\documentclass[10pt,a4paper,twoside]{book}
+
+%JMANUEL
+\usepackage[utf8]{inputenc}  %con el formato de applemac no andan los acentos directos.
+\usepackage[spanish]{babel}
+
+\begin{document}
+
+Este es el texto que queremos hacer en formato Latex para que podamos hacer una publicación seria, con intención de ser profesionales y poder cumplir finalmente nuestro sueño.
+
+A continuación se muestra como introducir código fuente:
+
+\begin{verbatim}
+program inflation (Output)
+  {Assuming annual inflation rates of 7%, 8%, and
+  10%,...   years};
+  const  MaxYears = 10;
+  var    Year: 0..MaxYears;
+         Factor1, Factor2, Factor3: Real;
+  begin
+Year := 0;
+Factor1 := 1.0; Factor2 := 1.0; Factor3 := 1.0; WriteLn('Year 7% 8% 10%'); WriteLn;
+repeat
+Year := Year + 1;
+Factor1 := Factor1 * 1.07;
+Factor2 := Factor2 * 1.08;
+Factor3 := Factor3 * 1.10; WriteLn(Year:5,Factor1:7:3,Factor2:7:3,
+        Factor3:7:3)
+end.until Year = MaxYears
+
+\end{verbatim}
+
+Saludos.
+
+Juan Manuel.
+
+NOTA: en este doc si se ven los acentos y las ñs.
+
+\end{document}

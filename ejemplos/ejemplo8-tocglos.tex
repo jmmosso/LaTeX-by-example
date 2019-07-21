@@ -1,0 +1,77 @@
+\documentclass{book}
+
+%JMANUEL
+\usepackage[utf8]{inputenc}  %con el formato de applemac no andan los acentos directos.
+\usepackage[spanish]{babel}
+
+\usepackage[spanish]{translator}
+\usepackage[toc,acronym]{glossaries}
+\makeglossaries
+\input{ejemplo8-glosario.tex}
+\input{ejemplo8-acronimos.tex}
+
+
+\begin{document}
+
+\title{TOC con glosario y acróninos}
+\author{Juan Manuel Ramon}
+\date{Setiembre de 2012}
+\maketitle
+
+\frontmatter
+
+% Para agregar el índice, puede ser omitido.
+\tableofcontents
+
+
+\chapter{Introducción}
+Aquí escribo la introducción. Cada párrafo se separa con una línea en blanco.
+\mainmatter
+ 
+\chapter{Primero lo primero}
+Puedo hacer que el texto vaya en cursiva con \emph{texto en cursiva}. Hacer una enumeración:
+\begin{enumerate}
+\item Linux
+\item OpenBSD
+\item FreweBSD
+\end{enumerate}
+
+La \gls{computadora} no tiene nada que ver con el \gls{ids}, y mucho menos con el \gls{lavarropas}.
+Toda la documentación de los \gls{ids} deberá estar en formato \gls{pdf}.
+
+\chapter{Segundo le sigue}
+Las notas a  pie se hacen con\footnote{Texto que aparecerá en la nota a pie de página.}.
+
+\section{Introduccción}
+Texto de la sección de introducción...
+La \gls{computadora} no tiene nada que ver con el \gls{ids}, y mucho menos con el \gls{lavarropas}.
+Toda la documentación de los \gls{ids} deberá estar en formato \gls{pdf}.
+
+\section{Estructura}
+Texto de la sección de etructuras...
+
+\subsection{Primera subsección}
+Texto de la priimera subsección de estructuras...
+
+\subsection{Segunda subsección}
+Texto de la segunda subsección de estructuras...
+
+\appendix
+\chapter{Primer apéndice}
+Texto del priimer apéndice...
+La \gls{computadora} no tiene nada que ver con el \gls{ids}, y mucho menos con el \gls{lavarropas}.
+Toda la documentación de los \gls{ids} deberá estar en formato \gls{pdf}.
+
+\chapter{Segundo apéndice}
+Texto del segundo apéndice...
+
+\backmatter
+
+\newpage
+\printglossary[type=main]
+\newpage
+\printglossary[type=\acronymtype]
+
+
+
+\end{document}

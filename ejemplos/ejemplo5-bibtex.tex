@@ -1,0 +1,20 @@
+\documentclass{article}
+%\documentclass[10pt,a4paper,twoside]{book}
+
+%JMANUEL
+\usepackage[utf8]{inputenc}  %con el formato de applemac no andan los acentos directos.
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+
+\begin{document}
+
+
+La principal diferencia con el método simple es que la base de datos de referencias está en un archivo por separado, el cuál puede ser procesado de diferentes manera a la hora de ser incluído en el libro.
+
+Nuevo York. — La artista y activista por la paz Yoko Ono \cite{primero} se unió al llamamiento para la liberación de las tres integrantes de la banda punk rusa Pussy Riot \cite{segundo}, alabando su postura \cite[p. 2]{tercero} en favor de la libertad de expresión después de ser condenadas a dos años de prisión por organizar "una oración punk" en la principal catedral de Moscú.
+
+
+\bibliography{ejemplo5-bibtex}
+	\bibliographystyle{plain}
+
+\end{document}

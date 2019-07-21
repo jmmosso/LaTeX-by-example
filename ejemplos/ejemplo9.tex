@@ -1,0 +1,58 @@
+\documentclass{article}
+
+%JMANUEL
+\usepackage[utf8]{inputenc}  %con el formato de applemac no andan los acentos directos.
+\usepackage[spanish]{babel}
+
+\usepackage{mathtools}
+
+\begin{document}
+
+Mi primera ecuación en LaTeX.
+\newline
+
+A. Formato en línea (Text)
+
+A la expresión 
+\( x \leq 21 \) 
+, si se la instacia con 19 da bien.
+\newline
+
+B. Formato separado (Displayed)
+\newline
+
+La siguiente expresión:
+\[
+ \forall x \in X, \quad \exists y \leq \epsilon
+\]
+puede ser connsiderada por diversos motivos como un...
+\newline
+
+Una serie:
+\[
+ {n! \over k!(n-k)!} = {n \choose k}
+\]
+
+Una matríz:
+\[
+ A_{m,n} =
+ \begin{pmatrix}
+  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
+  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
+  \vdots  & \vdots  & \ddots & \vdots  \\
+  a_{m,1} & a_{m,2} & \cdots & a_{m,n}
+ \end{pmatrix}
+\]
+
+Una expresión ara controlar espacio horizontal:
+
+\[
+  f(n) = \left\{ 
+  \begin{array}{l l}
+    n/2 & \quad \text{if $n$ is even}\\
+    -(n+1)/2 & \quad \text{if $n$ is odd}\\
+  \end{array} \right.
+\]
+
+
+\end{document}

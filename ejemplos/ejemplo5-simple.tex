@@ -1,0 +1,23 @@
+\documentclass{article}
+%\documentclass[10pt,a4paper,twoside]{book}
+
+%JMANUEL
+\usepackage[utf8]{inputenc}  %con el formato de applemac no andan los acentos directos.
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+
+\begin{document}
+
+Existen dos formas de generar bibliografías en documentos, una simple \cite{simple} por medio de directivas Latex que puede ser utilizada para artículos cortos en las que no se utilizan gran cantidad de referencias, y otra mas compleja \cite{bibtex} para Tesis o Libros en cuyo caso se utiliza una herramienta suplementaria conocida como "bibTex" .
+
+\begin{thebibliography}{1}
+
+  \bibitem{simple} John W. Dower {\em Readings compiled for History
+  21.479.}  1991.
+
+  \bibitem{bibtex}  The Japan Reader {\em Imperial Japan 1800-1945} 1973:
+  Random House N.Y. 
+
+  \end{thebibliography}
+
+\end{document}

@@ -1,0 +1,25 @@
+\documentclass{article}
+%JMANUEL
+\usepackage[utf8]{inputenc}  %con el formato de applemac no andan los acentos directos.
+\usepackage[spanish]{babel}
+
+
+\usepackage{makeidx}
+
+\title{Mi primer índice}
+\makeindex
+
+\begin{document}
+\maketitle
+
+Hola mundo\index{mundo}, como estás.
+
+\newpage
+Este es nuestro lugar en el mundo\index{mundo}, algo totalmente terrenal\index{mundo!terrenal}.
+
+\newpage
+Este es nuestro lugar en el mundo\index{mundo}, algo totalmente terrenal\index{mundo!terrenal} y totalmente mágico\index{fantasía!mágico}.
+
+\printindex
+
+\end{document}

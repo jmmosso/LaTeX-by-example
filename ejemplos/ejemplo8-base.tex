@@ -1,0 +1,27 @@
+\documentclass{article}
+%JMANUEL
+\usepackage[utf8]{inputenc}  %con el formato de applemac no andan los acentos directos.
+\usepackage[spanish]{babel}
+\usepackage[spanish]{translator}
+
+\usepackage[acronym]{glossaries}
+\makeglossaries
+\input{ejemplo8-glosario.tex} 
+\input{ejemplo8-acronimos.tex} 
+
+\title{Mi primer doc con glosario y acrónimos}
+
+\begin{document}
+\maketitle
+
+La \gls{computadora} no tiene nada que ver con el \gls{ids}, y mucho menos con el \gls{lavarropas}.
+
+\newpage
+Toda la documentación de los \gls{ids} deberá estar en formato \gls{pdf}.
+
+\newpage
+\printglossary[type=main]
+\newpage
+\printglossary[type=\acronymtype]
+
+\end{document}
